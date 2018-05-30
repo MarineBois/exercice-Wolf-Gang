@@ -19,5 +19,4 @@ Construire un site avec du jQuery et de la vidéo
 - Police utilisé : "Bodega Sans"
 - Réussir à créer les espaces entre chaque vignette "Moto" de manière la plus simple possible (utilisation des pseudo classe)
 
-# BONUS
-Trouver le moyen de désactiver les fleches directionnelles dans le FlexSlider en passant par le JS (Step 4)
+
