@@ -1,0 +1,379 @@
+/* FONT FACE */
+@font-face {
+    font-family: 'BodegaSans';
+    src: url('../fonts/BodegaSansBlack.eot');
+    src: url('../fonts/BodegaSansBlack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BodegaSansBlack.woff2') format('woff2'),
+        url('../fonts/BodegaSansBlack.woff') format('woff'),
+        url('../fonts/BodegaSansBlack.ttf') format('truetype'),
+        url('../fonts/BodegaSansBlack.svg#BodegaSansBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+/* Appelle les polices de la page */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	background-image: url('../img/bg_body.svg');
+	background-color: #444444;
+	color:#fff;
+	font-family: Arial;
+	
+}
+
+html {
+		font-size: 62.5%;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*GLOBAL */
+
+a {
+	text-decoration: none;
+	color:#fff;
+}
+
+.orange {
+	color:#FF9D00;
+}
+
+h1, h2, h3, h4 {
+	text-transform: uppercase;
+	font-family: 'BodegaSans';
+}
+
+.clearfix {
+	clear: both;
+}
+
+p {
+	line-height: 2.5rem;
+	font-size: 1.5rem;
+}
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+/* HEADER */
+
+header {
+	background: rgb(255,255,255);
+background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 50%, rgba(51,51,51,1) 50%);
+background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 50%,rgba(51,51,51,1) 50%);
+background: linear-gradient(135deg, rgba(255,255,255,1) 50%,rgba(51,51,51,1) 50%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#333333',GradientType=1 );
+}
+
+header img {
+	height:100px;
+	padding: 25px;
+}
+
+header div{
+	max-width: 80%;
+	margin:0 auto;
+	display : flex;
+	justify-content: space-between;
+}
+header nav {
+	text-align: right;	
+}
+
+header nav a {
+	flex-basis: 100%;
+	display: block;
+	padding:15px;
+	font-size: 2.5rem;
+}
+
+/* Ce qui concerne le header et la nav */
+
+/* MAIN */
+
+main {
+	text-align: center;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+
+
+h1 {
+	font-size: 4rem;
+	padding: 20px;
+	margin: 15px;
+}
+
+h2 {
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	font-size: 3rem;
+	padding: 15px;
+	text-align: left;
+	margin : 50px auto;
+}
+
+#motos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#motos h2 {
+	flex-basis: 100%;
+
+}
+
+#motos h3 {
+	color:#FF9D00;
+	border-bottom: 2px solid #FF9D00;
+	max-width: 80%;
+	font-size:2.5rem;
+	margin: 15px auto;
+}
+
+#motos article {
+	max-width: 20%;
+	background-color: #fff;
+	text-align: center;	
+}
+
+#motos img {
+	max-height: 100px;
+}
+
+#motos p {
+	color:grey;
+	font-size: 1.2rem;
+	font-weight: normal;
+	padding: 10px;
+}
+
+#motos a {
+	background-color: #FF9D00;
+	display: block;
+	max-width: 90%;
+	margin : 10px auto;
+	padding: 10px 0;
+}
+
+#about {
+	margin-bottom: 75px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+#about article {
+	max-width: 59%;
+}
+
+#about h2 {
+	flex-basis: 100%;
+}
+
+#about p {
+	text-align: left;
+}
+
+#about a {
+	display: inline-block;
+	width: 15%;
+}
+
+#about i {
+	font-size: 2.5rem;
+	margin-top: 25px;
+}
+
+video {
+	max-width: 40%;
+}
+
+/* Ce qui concerne le corps du site */
+
+
+
+
+
+/* FOOTER */
+
+footer {
+	box-shadow: 0px 0px 15px black;
+	text-align: center;
+}
+
+footer h4 {
+	font-size: 2.5rem;
+	padding : 25px;
+}
+
+footer a {
+	text-decoration: underline;
+}
+
+footer nav {
+	display : flex;
+	flex-direction: row;
+	max-width: 20%;
+	margin: 25px auto;
+}
+
+footer nav a {
+	display: block;
+	width: 25%;
+}
+
+/* LICENCE */
+#licence {
+    display: block;
+    text-align: center;
+    padding: 25px;
+    line-height: 2rem;
+}
+
+#licence img {
+    width: 50px;
+}
+
+/* Ce qui concerne le footer */
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+
+	body {
+		padding: 20px;
+	}
+
+	main {
+		max-width: 90%;
+	}
+
+	#motos {
+		display: block;
+
+	}
+
+	#motos article {
+		max-width: 100%;
+		padding: 15px;
+		margin: 25px auto;
+	}
+
+	#motos img {
+		width: 75%;
+		max-height: 100%;
+	}
+
+	#about {
+		display: block;
+	}
+
+	#about article {
+		margin: 25px auto;
+		max-width: 100%;
+	}
+
+	#about p {
+		text-align: center;
+	}
+
+	#about a {
+		display: block;
+		margin: 0 auto;
+	}
+
+	video {
+		max-width: 100%;
+	}
+
+	footer {
+		max-width: 90%;
+		margin: 0 auto;
+		box-shadow: 1px 1px 15px black;
+		text-align: center;
+
+	}
+
+	footer nav {
+		max-width: 50%;
+	}
+} 
+
+
+@media screen and (max-width: 768px) {
+
+	header {
+		background: -moz-linear-gradient(285deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(51%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(285deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(285deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(285deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%); /* ie10+ */
+background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+	}
+
+	header div {
+		display: block;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	header img {
+		height: 150px;
+		padding: 0;
+	}
+
+	header nav {
+		margin-top:25px;
+	}
+
+	footer nav {
+		max-width: 90%;
+	}
+}
